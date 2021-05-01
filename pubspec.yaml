@@ -1,6 +1,6 @@
 name: quick_test
-description: An elegant way to writing tests.
-version: 0.0.2
+description: An elegant way to write tests.
+version: 0.0.3
 homepage: https://github.com/markgravity/quick.git
 
 environment:
