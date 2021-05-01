@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:meta/meta.dart';
-import 'package:quick/src/widget_declarer.dart';
+import 'package:quick_test/src/widget_declarer.dart';
 
 WidgetDeclarer? _localWidgetDeclarer;
 WidgetDeclarer get _widgetDeclarer {
