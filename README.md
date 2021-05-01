@@ -96,13 +96,13 @@ import 'package:quick/quick_test.dart';
 
 void main() {
   describe("a dolphin", () {
-    late Dolphin dolphin;
+    Dolphin dolphin;
     beforeEach(() {
       dolphin = Dolphin();
     });
 
     describe("its click", () {
-      late Click click;
+      Click click;
       beforeEach(() {
         click = dolphin.click();
       });
@@ -134,10 +134,11 @@ This can be expressed using `context` functions: one `context` for the normal ca
 ```dart
 import 'package:flutter_test/flutter_test.dart';
 import 'package:quick/quick_test.dart';
+import 'package:mockito/mockito.dart';
 
 void main() {
   describe("a dolphin", () {
-    late Dolphin dolphin;
+    Dolphin dolphin;
     beforeEach(() {
       dolphin = Dolphin();
     });
@@ -145,7 +146,7 @@ void main() {
     describe("its click", () {
       context("when the dolphin is not near anything interesting", () {
         it("is only emitted once", () {
-          expect(dolphin.click().count, 1);
+          verify(dolphin.click()).called(1);
         });
       });
 
@@ -157,7 +158,7 @@ void main() {
         });
 
         it("is emitted three times", () {
-          expect(dolphin.click().count, 3);
+          verify(dolphin.click()).called(3);
         });
       });
     });

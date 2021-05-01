@@ -1,3 +1,8 @@
+## [0.0.4]
+
+* Add example
+* Add document comments
+
 ## [0.0.3]
 
 * Update description.

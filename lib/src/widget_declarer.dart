@@ -2,6 +2,11 @@ import 'dart:async';
 
 import 'package:flutter_test/flutter_test.dart' as flutter;
 
+/// A class that manages the state of widget tests as they're declared.
+///
+/// A nested tree of WidgetDeclarers tracks the current group, set-up, and tear-down
+/// functions. Each WidgetDeclarer in the tree corresponds to a group. This tree is
+/// tracked by a zone-scoped "current" WidgetDeclarer;
 class WidgetDeclarer {
   WidgetDeclarer(
     WidgetDeclarer? parent,

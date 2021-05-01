@@ -1,6 +1,6 @@
 name: quick_test
-description: An elegant way to write tests.
-version: 0.0.3
+description: Quick is a behavior-driven development framework for Flutter. Inspired by Quick (swift).
+version: 0.0.4
 homepage: https://github.com/markgravity/quick.git
 
 environment:
